@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+   	<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/43/43148.png?w=360"/>
+		<title> Calculatrice en ligne </title>
+		<link rel="stylesheet" type="text/css" href="css/v3.css">
+		<script src="js/js_v2.js"></script>
+  	</head>
+  	<body>
+		<table>
+			<tr>
+				<th colspan="4"> CALCULATRICE </th>
+			</tr>
+			<main class="main">
+				<div class="calculator">
+					<tr>
+						<th colspan="4">
+							<div class="screen">
+								<div class="screen-last" id="lastOperationScreen"></div>
+								<p id="currentOperationScreen"> 0 </p>
+							</div>
+						</th>
+					</tr>
+					<div class="buttons-grid">
+						<tr>
+							<td colspan="2" id="c"><button class="btn btn-red span-2 styled" id="clearBtn" onclick="c()"> CLEAR </button></td>
+							<td colspan="2" id="d"><button class="btn btn-blue span-2 styled" id="deleteBtn" onclick="this.blur();"> DELETE </button></td>
+						</tr>
+						<tr>
+							<td><button class="btn styled" onclick="n(7)">7</button></td>
+							<td><button class="btn styled" onclick="n(8)">8</button></td>
+							<td id="o"><button class="btn styled" onclick="n(9)">9</button></td>
+							<td><button class="btn styled" onclick="div()">÷</button></td>
+						</tr>
+						<tr>
+							<td><button class="btn styled" onclick="n(4)">4</button></td>
+							<td><button class="btn styled" onclick="n(5)">5</button></td>
+							<td id="o"><button class="btn styled" onclick="n(6)">6</button></td>
+							<td><button class="btn styled" onclick="mul()">×</button></td>
+						</tr>
+						<tr>
+							<td><button class="btn styled" onclick="n(1)">1</button></td>
+							<td><button class="btn styled" onclick="n(2)">2</button></td>
+							<td id="o"><button class="btn styled" onclick="n(3)">3</button></td>
+							<td><button class="btn styled" onclick="sub()">−</button></td>
+						</tr>
+						<tr>
+							<td id="p"><button class="btn styled" onclick="this.blur()" id="pointBtn">.</button></td>
+							<td><button class="btn styled" onclick="n(0)">0</button></td>
+							<td><button class="btn styled" onclick="screen('result')" id="equalsBtn">=</button></td>
+							<td><button class="btn styled" onclick="add()">+</button></td>
+						</tr>
+					</div>
+				</div>
+			</main>
+		</table>
+		<footer class="footer">
+			<center>
+				<p> Copyright © <script> document.write(new Date().getFullYear()) </script> callistegodailler </p>
+				<a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+			</center>
+   	</footer>
+  	</body>
+</html>
