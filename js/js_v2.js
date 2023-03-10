@@ -61,11 +61,12 @@ function screen(x){
 }
 
 function n(x){
-	if (n1 != ""){
+	if (n1 != ""){ //&& qd = est click
 		n2 = x;
 		screen(n2);
 	}
 	else {
+//qd opération est click
 		n1 = x;
 		screen(n1);
 	}
